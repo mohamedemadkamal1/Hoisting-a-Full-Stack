@@ -30,10 +30,7 @@ jobs:
           command: |
            npm run api:install
       # TODO: Lint the frontend
-      - run:
-          name: Front-End Lint
-          command: |
-            npm run frontend:lint
+      
       # TODO: Build the frontend app
       - run:
           name: Front-End Build
@@ -44,6 +41,11 @@ jobs:
           name: API Build
           command: |
             npm run api:build
+      # TODO: integeration testing
+      - run:
+          name: integiration test
+          command: |
+            npm run frontend:test
   # deploy step will run only after manual approval
   deploy:
     docker:
