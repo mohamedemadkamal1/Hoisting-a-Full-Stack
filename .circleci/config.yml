@@ -37,12 +37,12 @@ jobs:
       # TODO: Build the backend API      
       
       # TODO: integeration testing
-      - run:
-          name: integiration test
-          command: |
-            npm run frontend:test
-      # TODO: end to end test
       
+      # TODO: end to end test
+      - run:
+          name: e2e test
+          command: |
+            npm run frontend:e2e
   # deploy step will run only after manual approval
   deploy:
     docker:
