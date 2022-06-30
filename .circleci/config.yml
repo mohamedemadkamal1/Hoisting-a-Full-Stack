@@ -35,10 +35,7 @@ jobs:
           command: |
             npm run frontend:build
       # TODO: Build the backend API      
-      - run:
-          name: Back-end build
-          command: |
-            npm run api:build
+      
       # TODO: integeration testing
       - run:
           name: integiration test
