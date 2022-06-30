@@ -38,7 +38,7 @@ jobs:
       - run:
           name: Back-end build
           command: |
-            np run api:build
+            npm run api:build
       # TODO: integeration testing
       - run:
           name: integiration test
