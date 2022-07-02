@@ -19,6 +19,8 @@ npm-debug.log*
 .tmp/
 .versions/
 coverage/
+www/
+node_modules/
 tmp/
 temp/
 platforms/
@@ -38,3 +40,5 @@ venv/
 
 # Elastic Beanstalk Files
 
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
