@@ -57,12 +57,12 @@ jobs:
       - aws-cli/setup
       - checkout
       - run:
-          name: Deploy App
+          name: Deploy The frontend
           # TODO: Install, build, deploy in both apps
           command: |
             npm run frontend:deploy
       - run:
-          name: Deploy App
+          name: Deploy The API
           # TODO: Install, build, deploy in both apps
           command: |
             npm run api:deploy
