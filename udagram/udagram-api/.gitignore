@@ -36,6 +36,7 @@ Thumbs.db
 UserInterfaceState.xcuserstate
 venv/
 .env
+node_modules
 
 
 # Elastic Beanstalk Files
