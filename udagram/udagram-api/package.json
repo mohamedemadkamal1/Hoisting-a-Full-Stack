@@ -9,8 +9,7 @@
     "scripts": {
         "start": "node ./www/server.js",
         "tsc": "npx tsc",
-        "dev": "ts-node ./src/server.ts",
-        "up": "db-migrate up",
+        "dev": "npx ts-node-dev --respawn --transpile-only ./src/server.ts",
         "prod": "npx tsc && node ./www/server.js",
         "clean": "rm -rf www/ || true",
         "deploy": "npm run build && chmod +x bin/deploy.sh && bin/deploy.sh",
